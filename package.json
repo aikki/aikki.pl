@@ -6,6 +6,6 @@
     "scan:icons": "make icons",
     "sass:watch": "sass assets/styles.scss assets/styles.css -w",
     "presass:build": "npm run scan:icons",
-    "sass:build": "sass assets/styles.scss assets/styles.css"
+    "sass:build": "sass assets/styles.scss assets/styles.css --style compressed"
   }
 }
