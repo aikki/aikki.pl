@@ -1,0 +1,19 @@
+:root, .dark-theme {
+  --background: #2c2c2c;
+  --container-background: #1a1a1a;
+  --font-color: white;
+  --badge-background: #3d3d3d;
+  --badge-border: #4a4a4a;
+  --url-border: #545454;
+  --icon-filter: opacity(1);
+}
+
+.light-theme {
+  --background: #e8e8e8;
+  --container-background: #f4f4f2;
+  --font-color: #495464;
+  --badge-background: #BBBFCA;
+  --badge-border: #495464;
+  --url-border: #BBBFCA;
+  --icon-filter: brightness(39.2%) sepia(100%) grayscale(0.9) saturate(800%) hue-rotate(180deg) brightness(64%);
+}

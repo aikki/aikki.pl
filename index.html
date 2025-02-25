@@ -12,6 +12,10 @@
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
+<div class="theme-changer">
+    <span class="dark-theme"><button onclick="changeTheme('dark')"></button></span>
+    <span class="light-theme"><button onclick="changeTheme('light')"></button></span>
+</div>
 <div class="container">
     <header>
         <img src="assets/logo.png" alt="aikki logo" />
@@ -54,5 +58,10 @@
         </a>
     </footer>
 </div>
+<script>
+    const changeTheme = function(theme) {
+        document.body.className = theme + '-theme';
+    }
+</script>
 </body>
 </html>
