@@ -3,7 +3,10 @@
 
 @import "fonts/open-sans.css";
 * {
-  transition: background-color 0.1s linear, color 0.1s linear;
+  transition: background-color 0.1s linear,
+              color 0.1s linear,
+              border 0.1s linear
+              ;
 }
 
 body {
@@ -169,6 +172,9 @@ footer {
   @each $icon in icons.$icons {
     &.#{$icon} {
       background-image: url(icons/#{$icon}.png);
+      @if ($icon == 'adhd') {
+        filter: none;
+      }
     }
   }
 }
