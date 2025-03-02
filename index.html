@@ -84,6 +84,9 @@
     const changeTheme = function(theme) {
         document.body.className = theme + '-theme';
     }
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        changeTheme('dark');
+    }
 </script>
 </body>
 </html>
